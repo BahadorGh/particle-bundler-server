@@ -170,7 +170,7 @@ export class BiconomySmartAccountV2 implements IContractAccount {
         }
 
         const accountContract = await this.getAccountContract();
-        return await accountContract.nonce();
+        return await accountContract.nonce(0);
     }
 
     public async isAccountDeploied(): Promise<boolean> {
